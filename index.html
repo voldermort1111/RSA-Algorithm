@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/main.js"></script>
+    <script src="./js/controller.js"></script>
+    <script src="./js/text.js"></script>
+    <script src="./js/number.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+    <section class="register-container">
+        <div class="register-form" action="">
+            <div class="form-header">
+                <h3>RSA</h3>
+            </div>
+            <div class="form-content">
+                <div class="input-wrapper">
+                    <div>N</div>
+                    <br>
+                    <Input type="number" id="input-n" value="50621"></Input><br><br>
+                </div>
+                <div class="input-wrapper">
+                    <div>E</div>
+                    <br>
+                    <Input type="number" id="input-e" value="5"></Input><br><br>
+                </div>
+                <div class="input-wrapper">
+                    <div>Text</div>
+                    <br>
+                    <Textarea placeholder="hihi" id="input-text"></Textarea><br><br>
+                </div>
+                <div class="input-wrapper">
+                    <div>Result</div><br>
+                    <Textarea placeholder="hihi" id="input-result"></Textarea><br><br>
+                </div>
+
+            </div>
+            <div class="form-footer">
+                <button id="btn-encryption" onclick=encryption()>Encryption</button><br><br>
+                <button id="btn-decryption" onclick=decryption()>Decryption</button><br><br>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
